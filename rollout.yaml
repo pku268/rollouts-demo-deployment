@@ -2,11 +2,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: rollouts-demo-1
+  name: rollouts-demo-2
   labels:
     app: rollouts-demo
 spec:
-  replicas: 5
+  replicas: 1
   revisionHistoryLimit: 2
   selector:
     matchLabels:
