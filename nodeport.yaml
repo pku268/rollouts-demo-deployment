@@ -7,6 +7,7 @@ spec:
   selector:
     app: rollouts-demo
   ports:
-  - nodePort: 30007
+  - nodePort: 30008
     protocol: TCP
     port: 80
+    targetPort: 80
