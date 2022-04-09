@@ -6,7 +6,7 @@ metadata:
   labels:
     app: rollouts-demo
 spec:
-  replicas: 3
+  replicas: 5
   revisionHistoryLimit: 2
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: rollouts-demo
+        app: rollouts-demo-1
     spec:
       containers:
         - name: rollouts-demo
