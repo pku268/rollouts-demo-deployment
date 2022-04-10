@@ -8,10 +8,9 @@ metadata:
     ingress.kubernetes.io/app-root: "/"
 spec:
   rules:
-  - host: prabhat.com
-    http:
+  - http:
       paths:
-      - path: /
+      - path: /canary
         pathType: Prefix
         backend:
           service:
