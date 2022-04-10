@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo-1
-          image: "nginx"
+          image: "nginx:stable-alpine"
           ports:
             - name: http
               containerPort: 80
