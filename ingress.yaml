@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/app-root: "/"
 spec:
   rules:
-  - host: hello-test.internal
+  - host: prabhat.com
     http:
       paths:
       - path: /
@@ -17,4 +17,4 @@ spec:
           service:
             name: rollouts-demo
             port:
-              number: 8080
+              number: 80
