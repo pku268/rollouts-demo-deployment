@@ -36,7 +36,12 @@ spec:
 #          activeService: rollouts-demo
 #          previewService: rollouts-demo-preview
 #          autoPromotionEnabled: false
-     canary: 
+     canary:
+       stableService: svc-stable
+       canaryService: svc-canary
+       trafficRouting:
+        nginx:
+          stableIngress: realtimeapp-ingress
        steps:
        - setWeight: 20
        - pause: {}
