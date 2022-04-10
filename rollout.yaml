@@ -37,7 +37,7 @@ spec:
 #          previewService: rollouts-demo-preview
 #          autoPromotionEnabled: false
      canary:
-       stableService: svc-stable
+       stableService: rollouts-demo
        canaryService: svc-canary
        trafficRouting:
         nginx:
