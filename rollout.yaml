@@ -41,7 +41,7 @@ spec:
        canaryService: service-canary
        trafficRouting:
         nginx:
-          stableIngress: rollouts-demo
+          stableIngress: ingress-stable
        steps:
        - setWeight: 20
        - pause: {}
