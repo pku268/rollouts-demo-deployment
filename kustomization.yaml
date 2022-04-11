@@ -5,6 +5,7 @@ resources:
 - rollout.yaml
 - service.yaml
 - ingress.yaml
+- service-canary.yaml
 images:
 - name: alexmt/rollouts-demo
   newTag: blue
