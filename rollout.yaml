@@ -10,14 +10,14 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: rollouts-demo
+      app: rollouts-stable
   template:
     metadata:
       labels:
-        app: rollouts-demo
+        app: rollouts-stable
     spec:
       containers:
-        - name: rollouts-demo
+        - name: rollouts-stable
           image: "nginx"
           ports:
             - name: http
@@ -37,8 +37,8 @@ spec:
 #          previewService: rollouts-demo-preview
 #          autoPromotionEnabled: false
      canary:
-       stableService: rollouts-demo
-       canaryService: rollouts-preview
+       stableService: service-stable
+       canaryService: service-canary
        trafficRouting:
         nginx:
           stableIngress: rollouts-demo
