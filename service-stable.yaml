@@ -6,9 +6,10 @@ metadata:
   labels:
     app: service-stable
 spec:
+  type: LoadBalancer
   ports:
     - port: 80
-      targetPort: http
+      targetPort: 80
       protocol: TCP
       name: http
   selector:
