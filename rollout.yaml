@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: "alexmt/rollouts-demo:red"
+          image: "mmumshad/simple-webapp-color:latest"
           ports:
             - name: http
               containerPort: 80
