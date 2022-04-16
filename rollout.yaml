@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: "mmumshad/simple-webapp-color:latest"
+          image: "prabhat823/springboot-helloworld:v1"
           ports:
             - name: http
               containerPort: 80
