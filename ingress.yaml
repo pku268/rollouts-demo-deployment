@@ -11,7 +11,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /canary
+      - path: /springboot
         pathType: Prefix
         backend:
           service:
