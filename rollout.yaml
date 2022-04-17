@@ -19,8 +19,8 @@ spec:
       containers:
         - name: rollouts-demo
           image: "prabhat823/springboot-helloworld:v1"
-          command: ["/bin/sh"]
-          args: ["-c", "while true; do echo hello; sleep 10;done"]
+          command: ["java"]
+          args: ["-jar", "/app.jar"]
           ports:
             - name: http
               containerPort: 8080
