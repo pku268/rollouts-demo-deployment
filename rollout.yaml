@@ -19,7 +19,7 @@ spec:
       containers:
         - name: rollouts-demo
           image: "prabhat823/springboot-helloworld:v1"
-          command: [ "/bin/bash", "-c", "--" ]
+          command: [ "/bin/sh", "-c", "--" ]
           args: [ "while true; do sleep 30; done;" ]
           ports:
             - name: http
