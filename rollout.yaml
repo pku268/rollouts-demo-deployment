@@ -44,6 +44,9 @@ spec:
        trafficRouting:
         nginx:
           stableIngress: ingress-stable
-          additionalIngressAnnotations:   # optional
+          additionalIngressAnnotations:
             canary-by-header: X-Canary
             canary-by-header-value: iwantsit
+       steps:
+         - setCanaryScale:
+             replicas: 1
