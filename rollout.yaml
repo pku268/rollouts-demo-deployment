@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: "prabhat823/springboot-helloworld:v2"
+          image: "prabhat823/springboot-helloworld:v1"
           command: ["java"]
           args: ["-jar", "/app.jar"]
           ports:
@@ -44,10 +44,9 @@ spec:
        trafficRouting:
         nginx:
           stableIngress: ingress-stable
+          additionalIngressAnnotations:   # optional
+            canary-by-header: X-Canary
+            canary-by-header-value: iwantsit
        steps:
-       - setWeight: 20
-       - pause: {}
-       - setWeight: 40
-       - pause: {}
-       - setWeight: 70
+       - setWeight: 0
        - pause: {}
