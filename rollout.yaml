@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: "prabhat823/springboot-helloworld:v2"
+          image: "prabhat823/springboot-helloworld:v1"
           command: ["java"]
           args: ["-jar", "/app.jar"]
           ports:
